@@ -1,0 +1,44 @@
+/* RESET STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* COLORS */
+:root{
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 55%);
+    --very-dark-gray: hsl(0, 0%, 41%);
+}
+/* GENERAL STYLES */
+h1 , h2 , h3{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+p{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: var(--dark-gray);
+}
