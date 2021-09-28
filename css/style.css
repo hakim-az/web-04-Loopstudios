@@ -187,4 +187,31 @@ p{
 .leader-content p{
     line-height: 30px;
 }
+@media only screen and (max-width: 768px){
+    .leader{
+        padding: 100px 0;
+    }
+    .leader .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .leader-image{
+        background-image: url(../images/mobile/image-interactive.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 280px;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .leader-content{
+        width: 100%;
+        padding: 0;
+        position: relative;
+    }
+    .leader-content h2 , .leader-content p{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto 30px;
+    }
+}
 /* ----------------------------LEADER STYLE END---------------------------- */
