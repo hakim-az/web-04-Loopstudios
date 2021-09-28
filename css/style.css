@@ -17,8 +17,11 @@
     --very-dark-gray: hsl(0, 0%, 41%);
 }
 /* GENERAL STYLES */
-h1 , h2 , h3{
+body{
     font-family: sans-serif;
+    height: 300vh;
+}
+h1 , h2 , h3{
     font-weight: 100;
 }
 h1{
@@ -42,3 +45,112 @@ p{
     font-size: 16px;
     color: var(--dark-gray);
 }
+/* ----------------------------HEADER STYLE START---------------------------- */
+/* HEADER STYLE */
+.header{
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    max-height: 700px;
+    position: relative;
+}
+/* NAVBAR STYLE */
+.navbar{
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    margin-top: 20px;
+}
+.navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.nav-list{
+    display: flex;
+}
+.nav-list li{
+    margin-left: 30px;
+    padding: 8px;
+}
+.nav-list li a{
+    padding: 5px;
+}
+.nav-list li a:hover{
+    border-bottom: 2px solid var(--white);
+}
+/* HAMBURGER STYLE */
+#hamburger{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+    cursor: pointer;
+    display: none;
+}
+#hamburger span{
+    width: 28px;
+    height: 2px;
+    margin: 4px 0;
+    background-color: aliceblue;
+    transform-origin: 100%;
+}
+/* MOBILE NAVBAR STYLE */
+@media only screen and (max-width: 768px){
+    .header{
+        width: 100%;
+        background-image: url(../images/mobile/image-hero.jpg);
+        background-size: cover;
+    }
+    .nav-list{
+        width: 80%;
+        flex-direction: column;
+        position: fixed;
+        top: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: black;
+        align-items: center;
+        display: none;
+        padding: 60px 0;
+    }
+    .nav-list li{
+        margin: 15px 0;
+    }
+    .nav-list li a{
+        font-size: 20px;
+    }
+    #hamburger{
+        display: flex;
+    }
+}
+.active{
+    display: flex;
+}
+.scrolled{
+    background-color: rgb(118, 56, 177);
+    margin-top: 0;
+}
+/* HEADER CONTENT */
+.header-content .container h1{
+    color: var(--white);
+    border: 3px solid var(--white);
+    padding: 30px;
+    width: 580px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 768px){
+    .header-content .container h1{
+        width: 80%;
+        left: 10%;
+        right: 10%;
+        font-size: 2rem;
+        padding: 15px;
+    }
+}
+/* ----------------------------HEADER STYLE END---------------------------- */
